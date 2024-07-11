@@ -31,7 +31,20 @@ ALLOWED_HOSTS = ["*",
                  "https://www.hospitalmanagement01.azurewebsites.net",
                  "http://www.hospitalmanagement01.azurewebsites.net",
                  "https://hospitalmanagement01.azurewebsites.net",
-                 "http://hospitalmanagement01.azurewebsites.net",]
+                 "http://hospitalmanagement01.azurewebsites.net",
+                 "localhost",]
+
+CSRF_TRUSTED_ORIGINS = [
+                    "hospitalmanagement01.azurewebsites.net",
+                    "www.hospitalmanagement01.azurewebsites.net",
+                    "https://www.hospitalmanagement01.azurewebsites.net",
+                    "http://www.hospitalmanagement01.azurewebsites.net",
+                    "https://hospitalmanagement01.azurewebsites.net",
+                    "http://hospitalmanagement01.azurewebsites.net",
+                    "localhost",]
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 
 AUTH_USER_MODEL = "backend.Users"
 
